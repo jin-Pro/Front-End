@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - select</title>
+</head>
+<body>
+    <select name="fruits">
+        <optgroup label = "내가 좋아하는 과일">
+            <option label = "Apple" value = "Apple"></option>
+            <option>Orange</option>
+            <option>Banana</option>
+        </optgroup>
+        
+        <optgroup label = "내가 싫어하는 과일">
+            <option selected>Mango</option>
+            <option>Fineapple</option>
+        </optgroup>
+    </select>
+
+    <input type="text" list = "fruits">
+
+    <datalist id = "fruits">
+        <option>Apple</option>
+        <option>Orange</option>
+        <option>Banana</option>
+        <option>Mango</option>
+        <option>Fineapple</option>
+    </datalist>
+</body>
+</html>
