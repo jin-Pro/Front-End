@@ -1,72 +1,81 @@
-const dogName = '멍멍이';
-const dogAge = 2;
-
-console.log(dogName);
-console.log(dogAge);
-
-const dog = {
-    name:Jenny,
-    age : 2,
-};
-
-console.log(dog.name);
-console.log(dog.age);
-console.log(dog);
-
-const ironMan = {
-    name : '토니 스타크',
-    actor : '로버트 다우니 주니어',
-    alias : '아이언맨',
-};
-
-const captainAmerica = {
-    name : '스티븐 로저스',
-    actor : '크리스 에반스',
-    alias : '캡틴 아메리카'
-};
-
-function print(hero){
-    const text = `${hero.alias}(${hero.name})역할을 맡은 배우는 ${hero.actor}입니다.`;
-    console.log(text);
-}
-
-print(ironMan);
-print(captainAmerica);
-
-const dog = {
-    name : 'Jenny',
-    sound : '멍멍',
-    say : function say() {
+function Animal(type, name, sound){
+    this.type = type;
+    this.name = name;
+    this.sound = sound;
+    this.say = function(){
         console.log(this.sound);
     }
-};
+}
 
-dog.say();
+Animal.prototype.sleep = function(){
+    console.log('쿨쿨');
+}
+// 공통 함수 추가
 
-const numbers = {
-    a : 1,
-    b : 2,
-    get sum() {
-        console.log('sum 함수가 실행됩니다!');
-        return this.a + this.b;
+const dog = new Animal('개','Jenny','밥줘');
+const cat = new Animal('고양이','나비','야오오옹');
+
+dog.say();  // 밥줘
+cat.say();  // 야오오옹
+
+
+function Lion(name,sound){
+    Animal.call(this,'사자',name,sound);
+}
+// Lion을 생성할떄 Animal 객체를 호출해서 생성
+
+Lion.prototype = Animal.prototype;
+//Animal의 공통 함수를 Lion도 사용하기 위해
+
+
+// ---------------class로 생성해보기
+
+class Animal{
+    constructor(type,name,sound){
+        this.type = type;
+        this.name = name;
+        this.sound = sound;
     }
-};
 
-numbers.a = 5;
-console.log(numbers.sum);  
-// sum 함수를 조회만 해도 함수가 실행됨.
-
-const dog1 = {
-    myName: 'Jenny',
-    set name(value){
-        console.log('이름이 바뀝니다..');
-        this.myName = value;
+    say() {
+        console.log(this.sound);
     }
 }
 
-console.log(dog.myName);
-dog.Name = '멍멍이';
-// set 함수 실행
-console.log(dog.myName);
+class Dog extends Animal{
+    constructor(type,name,sound){
+        super('개',name,sound);
+    }
+}
+
+dog = new Dog('Jenny','밥줘');
+const cat2 = new Animal('고양이','나비','그르릉');
+
+dog.say();
+cat.say();
 
 
+class Food{
+    constructor(name){
+        this.name = name;
+        this.brands = [];
+    }
+    addBrand(brand){
+        this.brands.push(brand);
+    }
+    print(){
+        console.log(`${this.name}을 파는 음식점들 : `);
+        console.log(this.brands.join(', '));
+    }
+}
+
+const pizza = new Food('피자');
+pizza.addBrand('피자핫');
+pizza.addBrand('도미노 피자');
+
+const chicken = new Food('치킨');
+chicken.addBrand('BBQ');
+chicken.addBrand('굽네치킨');
+
+pizza.print();
+chicken.print();
