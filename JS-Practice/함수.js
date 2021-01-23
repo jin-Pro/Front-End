@@ -1,146 +1,66 @@
-// function
-// 이름이 hello1인 함수를 선언
+const a = 1;
+const b = 2;
+const sum = a + b;
 
-function hello1(){
-    console.log('hello1');
+// 를 함수로 만들어 본다.
+
+function add(a,b) {
+    return a+b;
 }
 
-console.log(hello1, typeof hello1);
+const sum1 = add(1,2);
+console.log(sum1);
 
-const hello1 = function(){
-    console.log('hello1');
+function hello(name){
+    console.log('Hello, ' + name + ' !');
 }
 
-console.log(hello1, typeof hello1);
+hello(jin-Pro);
 
-// 함수의 매개변수
-// 함수를 호출할 때 값을 지정
+function hello1(name){
+    console.log(`Hello ${name}!`);
+}
+
+hello1(jin-Pro);
 
 function hello2(name){
-    console.log(name," 안녕하세요");
+    return `Hello ${name}!`;
 }
 
-cosnt hello2 = function(name){
-    console.log(name," 안녕하세요");
-}
-// 함수의 리턴
-// 함수를 실행하면 얻어지는 값
+console.log(hello2(jin-Pro));
 
-function hello3(name){
-    return `hello3 ${name}`;
-}
-
-console.log(hello3);
-
-const hello3 = function(name){
-    return `hello3 ${name}`;
-}
-
-
-function hello1(){
-    console.log('hello1');
-}
-
-hello1();
-
-var hello2 = function(){
-    console.log('hello2');
-}
-
-const hello3 = function(){
-    console.log('hello3');
-}
-
-const sum = new Function('a','b','c','return a + b + c');
-
-console.log(sum(1,2,3));
-
-
-globalThis.a = 0;
-
-{
-    const a = 1;
-    const test = new function('return a');
-
-    console.log(test());
-}
-
-{
-    const a = 2;
-
-    const test = function(){
-        return a;
-    };
-
-    console.log(test());
-}
-
-// arrow 함수를 만들어 이름이 hello4인 변수에 할당
-
-const hello1 = () =>{
-    console.log('hello1');
-};
-
-// 매개변수가 하나일 때, 괄호 생략 가능
-
-const hello2 = name =>{
-    console.log('hello2',name)
-};
-
-const hello3 = (name,age) =>{
-    console.log('hello3',name, age);
-};
-
-// 함수의 리턴
-// 함수를 실행하면 얻어지는 값
-
-const hello4 = name =>{
-    return `hello4 ${name}`;
-};
-
-const hello5 = name =>`hello5 ${name}`;
-
-// 생성자 함수를 이용하여 새로운 객체를 만들어 내는 방법
-
-function Person(name, age){
-    this.name = name;
-    this.age = age;
-}
-
-const p = new Person('mark', 37);
-
-console.log(p, p.name, p.age);
-
-const a = new Person('Anna', 26);
-
-console.log(a, a.name, a.age);
-
-const Cat = (name,age) =>{
-    console.log(this);
-    this.name = name;
-    this.age = age;
-}
-
-const c = new Cat('냥이',1);
-
-// 함수를 호출하면 함수를 만들어서 리턴
-
-function plus(base){
-    return function(num){
-        return base + num;
+function getGrade(score){
+    if( score === 100){
+        return 'A+';
+    }else if(score >= 90){
+        return 'A';
+    }else if(score === 89){
+        return 'B+';
+    }else if(score >= 80){
+        return 'B';
+    }else if(score === 79){
+        return 'C+';
+    }else if(score >= 70){
+        return 'C';
+    }else{
+        return 'D';
     }
 }
 
-const plus5 = plus(5);
-console.log(plus5(10));
+const grade = getGade(100);
+console.log(grade);
 
-// 함수를 인자로 하여 함수를 호출
 
-function hello(c){
-    console.log('hello');
-    c();
+const add1 = (a, b) =>{
+    return a+b;
 }
 
-hello(function(){
-    console.log('콜백');
-});
+const sum3 = add1(1,2);
+console.log(sum3);
+
+const hello4 = (name) =>{
+    console.log(`Hello, ${name}!`);
+}
+
+hello4(jin-Pro);
+
