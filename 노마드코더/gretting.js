@@ -1,5 +1,5 @@
 const form = document.querySelector(".js-form"),
-    input = document.querySelector("input"),
+    input = form.querySelector("input"),
     greeting = document.querySelector(".js-greetings");
 
 
@@ -32,7 +32,7 @@ function loadName(){
     const currentUser = localStorage.getItem(USER_LS);
 
     if(currentUser === null){
-        // askForName();
+        askForName();
     }else{
         paintGreeting(currentUser);
     }
