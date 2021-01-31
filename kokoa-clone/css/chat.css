@@ -1,0 +1,195 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+.float--left{float: left;}
+.float--right{float:right;}
+
+body{
+    color: #2e363e;
+    font-family: "Open Sans", sans-serif;
+}
+
+.body__container{
+    background: #abc1d1;
+    height: 500vh;
+}
+/* HEADER */
+header{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+
+header .left-group{
+    width: 33%;
+}
+
+header .title{
+    margin-right: 5px;
+}
+
+header .time{
+    width: 34%;
+    text-align: center;
+}
+header .right-group{
+    width: 33%;
+    text-align: right;
+}
+
+
+/* CHAT-TITLE */
+.chat-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    margin-bottom: 15px;
+}
+
+.chat-title .back-btn{
+    width: 33%;
+}
+
+.chat-title .back-btn i{
+    color: black;
+}
+
+.chat-title .chat-target{
+    width: 33%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.chat-title .menu-btn{
+    width: 34%;
+    text-align: right;
+}
+
+.chat-title .menu-btn span:last-child{
+    margin-left: 20px;
+}
+
+
+.chat{
+    margin-top: 80px;
+}
+
+.chat .date-box{
+    display: flex;
+    justify-content: center;
+}
+.chat .date{
+    color: white;
+    background-color: #92a4b2;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    display: inline;
+}
+.chat .message{
+    padding: 0 25px;
+    display: flex;
+    margin-bottom: 25px;
+}
+.chat .message .profile-image{
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#제니2{
+    background:url("../제니2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chat .message .story-time{
+    display: flex;
+}
+
+.chat .message .name{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.chat .message .story{
+    background-color: white;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+
+.chat .message .time{
+    font-size: 14px;
+    display: flex;
+    align-items:flex-end;
+}
+.chat .own .story-time{
+    margin: 0 0 0 auto;
+}
+
+.chat .story-time .story-own{
+    background: #fae100;
+    border-radius:15px;
+    border-top-right-radius: 0px;
+}
+
+.reply{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 5px 25px;
+    box-sizing: border-box;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.reply .btn-add{
+    width: 10%;
+    color: rgba(0,0,0,.5);
+}
+
+.reply .input-box{
+    width: 90%;
+    position: relative;
+}
+.reply input{
+    padding: 14px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.reply .input-box i{
+    right: 50px;
+    top: 15px;
+    position: absolute;
+    color: rgba(0,0,0,.5);
+}
+.reply .input-box button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fae100;
+    right: 3px;
+    top: 3px;
+    position: absolute;
+}
+.reply .input-box button i{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}

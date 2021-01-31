@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../GitHub-clone/css/reset.css">
-    <link rel="stylesheet" href="css/Friends.css">
+    <link rel="stylesheet" href="css/chats.css">
 </head>
 <body>
 <div class="body__container">
@@ -22,12 +22,16 @@
         </div>
     </header>
 
+
     <section class="section section--menu">
         <div class="first-menu">
-            <h1 class="title">Friends</h1>
+            <h1 class="title">Chats</h1>
             <ul class="menu-group">
                 <li class="search">
                     <i class="fas fa-search fa-lg" aria-hidden="true"></i>
+                </li>
+                <li class="talk">
+                    <i class="far fa-comment-dots fa-lg" aria-hidden="true"></i>
                 </li>
                 <li class="music">
                     <i class="fas fa-music fa-lg" aria-hidden="true"></i>
@@ -37,40 +41,24 @@
                 </li>
             </ul>
         </div>
-
-        <div class="second-menu">
-            <ul class="attention">
-                <li>
-                    <i class="fas fa-info-circle" aria-hidden="true"></i>
-                </li>
-                <li class="title">Friends' Names Display</li>
-                <li>
-                    <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
-                </li>
-            </ul>
-        </div>
     </section>
 
-    <section class="section section--profile">
-        <div class="profile-image 제니"></div>
-        <div class="profile-name">잘생김영진</div>
-    </section>
-
-    <section class="section section--profile section--friendlist">
-        <ul class="friendlist">
-            <li class="first-title">
-                <div class="title">Channel</div>
-                <i class="fas fa-chevron-up fa-xs" aria-hidden="true"></i>
-            </li>
+    <section class="section section--chat">
+        <ul class="chatlist">
             <li>
-                <div class="profile-image" id="제니2"></div>
-                <div class="profile-name">
-                    <span>제니</span>
-                    <div class="right-menu">
-                        <span>2</span>
-                        <i class="fas fa-chevron-right fa-xs" aria-hidden="true"></i>
+                <a href="chat.html">
+                    <div class="profile-image" id="제니2"></div>
+                    <div class="chat-profile">
+                        <div>
+                            <h2 class="chat-name">제니</h2>
+                            <h4 class="chat-text">Please check My Kokoa Account ...</h4>
+                        </div>
+                        <div>
+                            <div class="chat-time">21:22</div>
+                            <div class="chat-check">1</div>
+                        </div>
                     </div>
-                </div>
+                </a>    
             </li>
         </ul>
     </section>
@@ -93,7 +81,6 @@
         </ul>
     </footer>
 </div>
-
 <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
 </body>

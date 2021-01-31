@@ -34,6 +34,7 @@ header .right-group{
     text-align: right;
 }
 
+
 /* SECTION--MENU */
 
 .section--menu{
@@ -66,85 +67,97 @@ header .right-group{
     font-size: 25px;
 }
 
-.section--menu .second-menu{
-    background-color: #fafafa;
-    padding: 15px 0px;
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: -15px;
+.section--main{
+    margin: 0 25px;
 }
 
-.section--menu .second-menu .attention{
+.section--main .profile{
     display: flex;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.5);
 }
-.section--menu .second-menu li{
-    margin-right: 3px;
-}
-.section--profile{
-    display: flex;
-    padding: 0 25px;
-}
-.profile-image{
-    border-radius: 30px;
-    margin-right: 20px;
-    width: 70px;
-    height: 70px;
-}
-.section--profile .제니{
+
+.section--main .profile-image{
     background: url("../제니.jpg");
     width: 100px;
     height: 80px;
-    background-size: 80px;
-    background-position: center;
+    border-radius: 30px;
+    margin-right: 20px;
+    background-position:center;
+    background-size: cover;
 }
 
-.section--profile .profile-name{
+.section--main .profile-detail{
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between; 
+}
+
+.section--main .profile-name{
+    font-weight: 600;
     font-size: 22px;
-    width: 100%;
+}
+
+.section--main .profile-phone{
+    margin-top: 8px;
+    color: rgba(0,0,0,.5);
+}
+
+.section--main .profile-item{
+    margin-top: 35px;
+    display: flex;
     justify-content: space-between;
 }
-
-.section--friendlist{
-    margin-top: 25px;
+.section--main .item{
+    text-align: center;
+}
+.section--main i{
+    font-size: 35px;
+}
+.section--main .item-name{
+    margin-top: 18px;
 }
 
-.section--friendlist .friendlist{
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,0.5);
-    padding-top: 15px;
+.section--main .suggestions{
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0,0,0,.5);
 }
 
-.section--profile .first-title{
-    justify-content: space-between; 
-    display: flex;
+.section--main .suggestions-title{
     margin-bottom: 30px;
+    font-size: 17px;
 }
-.section--profile .first-tile .title{
-    color:rgba(0, 0, 0, 0.5);
-}
-.section--profile .friendlist li{
+
+.section--main .suggestions-list{
     display: flex;
+}
+
+.section--main .suggestions-list li{
+    margin-right: 30px;
     
 }
-#제니2{
-    background:url("../제니2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.section--main .icon{
+    background: #fae100;
+    width: 60px;
     height: 60px;
-}
-
-.section--profile .right-menu{
+    border-radius: 10px;
     display: flex;
-    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto 10px auto;
+}
+.section--main .suggestions-list li i{
+    color: white;
 }
 
-.section--profile .right-menu i{
-    margin-top: 3px;
-}
+
+
+
+
+
+
+
 
 footer{
     position: fixed;
@@ -165,7 +178,7 @@ footer .app-list a{
     position: relative;
     color: #2e363e;
 }
-
+    
 footer .app-list .read-chat{
     background-color: tomato;
     width: 30px;

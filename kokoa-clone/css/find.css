@@ -1,0 +1,223 @@
+.clearfix::after{
+    content: "";
+    clear: both;
+}
+.float--left{float: left;}
+.float--right{float:right;}
+
+body{
+    color: #2e363e;
+    font-family: "Open Sans", sans-serif;
+}
+/* HEADER */
+header{
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 3px;
+}
+
+header .left-group{
+    width: 33%;
+}
+
+header .title{
+    margin-right: 5px;
+}
+
+header .time{
+    width: 34%;
+    text-align: center;
+}
+header .right-group{
+    width: 33%;
+    text-align: right;
+}
+
+.section--menu .first-menu{
+    justify-content: space-between; 
+    align-items: center;
+    padding: var(--horizontal-space);
+    margin-bottom: 15px;
+    display: flex;
+    padding: 25px;
+}
+
+.section--menu .first-menu .title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.section--menu .menu-group{
+    display: flex;
+}
+
+.section--menu .menu-group li{
+    margin-left: 25px;
+}
+
+.section--menu .menu-group i{
+    font-size: 25px;
+}
+
+/* ICON */
+.section--icon{
+    padding: 0 25px;
+}
+.section--icon ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+.section--icon .icon .icon-image{
+    text-align: center;
+}
+.section--icon i{
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.section--icon .icon-name{
+    margin-top: 18px;
+}
+
+.section--recommend{
+    margin: 25px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(0,0,0,.5);
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+.section--recommend .recommend-title{
+    font-size: 14px;
+    color: rgba(0,0,0,.5);
+}
+
+.section--recommend .recommend-description{
+    margin: 100px 0;
+    font-size: 18px;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+}
+
+.section--open-chat{
+    margin: 0 25px;
+}
+
+.section--open-chat .open-chat-header{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0,0,0,.5);
+    margin-bottom: 25px;
+}
+
+.section--open-chat a{
+    text-decoration: none;
+    color: rgba(0,0,0,.5);
+}
+
+.section--open-chat .open-chat-body{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.section--open-chat .open-chat-text{
+    margin-bottom: 30px;
+}
+
+.section--open-chat .text-title{
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.section--open-chat .text-search{
+    color: rgba(0,0,0,.5);
+}
+
+.section--open-chat .text-writer{
+    display: flex;
+    margin-top: 7px;
+}
+
+.section--open-chat .writer-image{
+    background: url("../제니.jpg");
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-size: 15px;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.section--open-chat .writer-name{
+    font-size: 14px;
+    color: rgba(0,0,0,.5);
+}
+
+.section--open-chat .writer-active{
+    color: #ffb0e0;
+}
+
+.section--open-chat .divider{
+    width: 2px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section--open-chat .open-chat-image{
+    background: url("../제니.jpg");
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-size: 120px;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+
+footer .app-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .app-list a{
+    position: relative;
+    color: #2e363e;
+}
+
+footer .app-list .read-chat{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}

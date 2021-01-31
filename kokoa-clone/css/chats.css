@@ -66,85 +66,66 @@ header .right-group{
     font-size: 25px;
 }
 
-.section--menu .second-menu{
-    background-color: #fafafa;
-    padding: 15px 0px;
-    font-size: 18px;
-    margin-bottom: 15px;
-    margin-top: -15px;
-}
-
-.section--menu .second-menu .attention{
-    display: flex;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.5);
-}
-.section--menu .second-menu li{
-    margin-right: 3px;
-}
-.section--profile{
-    display: flex;
+/* SECTION--CHAT */
+.section--chat .chatlist{
     padding: 0 25px;
 }
-.profile-image{
+.section--chat li a{
+    display: flex;
+    text-decoration: none;
+}
+
+.section--chat .profile-image{
     border-radius: 30px;
     margin-right: 20px;
-    width: 70px;
+    width: 90px;
     height: 70px;
 }
-.section--profile .제니{
-    background: url("../제니.jpg");
-    width: 100px;
-    height: 80px;
-    background-size: 80px;
-    background-position: center;
-}
 
-.section--profile .profile-name{
-    display: flex;
-    align-items: center;
-    font-size: 22px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.section--friendlist{
-    margin-top: 25px;
-}
-
-.section--friendlist .friendlist{
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,0.5);
-    padding-top: 15px;
-}
-
-.section--profile .first-title{
-    justify-content: space-between; 
-    display: flex;
-    margin-bottom: 30px;
-}
-.section--profile .first-tile .title{
-    color:rgba(0, 0, 0, 0.5);
-}
-.section--profile .friendlist li{
-    display: flex;
-    
-}
 #제니2{
     background:url("../제니2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60px;
 }
 
-.section--profile .right-menu{
+.section--chat .chat-profile{
+    width: 100%;
     display: flex;
-    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.section--profile .right-menu i{
-    margin-top: 3px;
+.section--chat .chat-name{
+    font-weight: 600;
+    font-size: 22px;
+    color: rgba(0,0,0);
 }
+
+.section--chat .chat-text{
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section--chat .chat-time{
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section--chat .chat-check{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
 
 footer{
     position: fixed;
