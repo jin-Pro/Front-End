@@ -1,0 +1,7 @@
+.nameForm, .writeName{
+    display: none;
+}
+
+.show_on{
+    display: block;
+}
