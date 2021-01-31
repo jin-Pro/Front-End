@@ -1,0 +1,15 @@
+html, body{
+    height: 100%;
+}
+
+.body__container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+.contents{
+    text-align: center;
+    margin: 0 auto;
+}
