@@ -1,0 +1,164 @@
+.body__container{
+    color: #2e363e;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.section--header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 3px;
+}
+.section--header div{
+    width: 33%;
+}
+.section--header .left-menu span{
+    margin-right: 5px;
+}
+
+.section--header .center-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.section--header .right-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section--header .right-menu i{
+    margin-left: 5px;
+}
+
+.screen{
+    /* padding: 0 25px; */
+}
+
+.screen .screen__title{
+    padding: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen .title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen .title-icon i{
+    margin-left: 25px;
+}
+
+.screen .screen__sub-title{
+    padding: 15px 0;
+    margin: -15px 0 15px 0;
+    font-size: 18px;
+    color: rgba(0,0,0,.8);
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.screen .screen__sub-title i{
+    color:rgba(0,0,0,.2);
+}
+.screen .my-profile{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.profile-image{
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.screen .my-image{
+    background: url("../../../kokoa-clone/제니.jpg");
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen .my-name{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.screen .screen__channel{
+    color: rgba(0,0,0,.5);
+    margin-top: 25px;
+    padding: 0px 25px;
+}
+
+.screen .screen__channel div{
+    padding-top: 15px;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.screen .friends-profile{
+    padding: 0 25px;
+}
+
+.screen .friends-profile li{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.screen .friend-image{
+    background:url("../../../kokoa-clone/제니2.jpg");
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen .friend-name{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section--footer{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px 50px;
+    background: #f9f9fa;
+    border-top: 1px solid rgba(121,121,121,.3);
+}
+
+.section--footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--footer li:nth-child(2){
+    position: relative;;
+}
+
+.section--footer .noti{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section--footer li a{
+    color: #2e363e;
+}

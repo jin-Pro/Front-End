@@ -1,0 +1,167 @@
+.body__container{
+    color: #2e363e;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.section--header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 3px;
+}
+.section--header div{
+    width: 33%;
+}
+.section--header .left-menu span{
+    margin-right: 5px;
+}
+
+.section--header .center-menu{
+    display: flex;
+    justify-content: center;
+}
+
+.section--header .right-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section--header .right-menu i{
+    margin-left: 5px;
+}
+
+.screen{
+    /* padding: 0 25px; */
+}
+
+.screen .screen__title{
+    padding: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.screen .title{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen .title-icon i{
+    margin-left: 25px;
+}
+
+.screen .chat-list{
+    padding: 0 25px;
+}
+
+.screen .chat-list li{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.profile-image{
+    width: 90px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+.screen .friend-image{
+    background:url("../../../kokoa-clone/제니2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.screen .chat-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.screen .chat-name-story{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #2e363e;;
+}
+.screen .chat-name{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.screen .chat-story{
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.screen .chat-time-noti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen .chat-time{
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.screen .chat-noti{
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section--footer{
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    padding: 20px 50px;
+    background: #f9f9fa;
+    border-top: 1px solid rgba(121,121,121,.3);
+}
+
+.section--footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--footer li:nth-child(2){
+    position: relative;;
+}
+
+.section--footer .noti{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section--footer li a{
+    color: #2e363e;
+}
