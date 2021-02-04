@@ -122,6 +122,8 @@
 .screen .friend-name{
     font-size: 22px;
     font-weight: 400;
+    width: 80%;
+    height: 100%;
 }
 
 .section--footer{

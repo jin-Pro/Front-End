@@ -122,9 +122,16 @@
     opacity: 0.8;
 }
 
+.screen .my-chats{
+    display: block;
+}
+
 .screen .my-chat{
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+    align-items: flex-end;
+    margin-bottom: 10px;
 }
 
 .screen .my-text{
@@ -161,6 +168,7 @@
     box-sizing: border-box;
     width: 100%;
     position: relative;
+    outline: none;
 }
 
 .section--footer .first-icon-form{
@@ -177,4 +185,5 @@
     height: 40px;
     border-radius: 50%;
     background: #FAE100;
+    outline: none;
 }
