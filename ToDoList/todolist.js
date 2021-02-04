@@ -10,7 +10,7 @@ function deleteToDo(event){
     const btn = event.target;
     const li = btn.parentNode;
     toDoList.removeChild(li);
-    toDos.pop(li.id);
+    toDos.splice(li.id-1,1);
     saveToDos();
 }
 
