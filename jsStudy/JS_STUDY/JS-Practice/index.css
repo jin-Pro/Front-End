@@ -1,0 +1,7 @@
+.js-name, .print-name{
+    display:none;
+}
+
+.show{
+    display: block;
+}
